@@ -27,7 +27,7 @@ class _HomeViewState extends State<HomeView> {
       appBar: AppBar(
         title: const Text("Agora Real Time Messaging"),
       ),
-      body: const Stack(
+      body: const Stack(\
         children: [
           Center(
             child: Placeholder(),
