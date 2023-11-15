@@ -48,13 +48,13 @@ class _HomeViewState extends State<HomeView> {
       return;
     }
 
-    // try {
+    try {
       await _client!.login(AppConstants.token, userId);
       logController.addLog('Login success: $userId');
       _joinChannel();
-    // } catch (errorCode) {
-    //   print('Login error: $errorCode');
-    // }
+    } catch (errorCode) {
+      print('Login error: $errorCode');
+    }
   }
 
   void _joinChannel() async {
